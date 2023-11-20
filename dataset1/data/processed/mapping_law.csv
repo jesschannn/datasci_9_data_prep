@@ -1,0 +1,4 @@
+law_cat_cd,law_cat_cd_ordinal
+FELONY,0
+MISDEMEANOR,1
+VIOLATION,2
