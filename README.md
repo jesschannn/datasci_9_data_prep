@@ -27,3 +27,17 @@ Both datasets were intended to be used for regression.
 3. Identify any rows with missing data and drop those rows
 4. Check that the data types of each column are correct (make sure that categorical columns are converted into string)
 5. Detect any outliers that are part of the dataset. Determine what to do with the outliers depending on how they affect the rest of the dataset.
+
+## Documentation of Steps to Clean and Transform Data
+
+1. Uploaded the dataset into the repository
+2. Converted the .csv file into a .pkl file
+3. Removed white spaces and special columns that were in the column names
+4. Dropped columns that had a lot of missing values because that would affect my interpretation of the data. I also dropped columns that I believed had similar information to another column; there's no reason to have more than one column with the same information.
+5. Identified rows that had missing information like "(null)" or "NaN" and dropped them from the dataset
+6. Checked that the data types were accurate for each column, especially in ensuring that categorical columns were converted into objects
+7. Used an Ordinal Encoder code for each of the columns to create .csv files where each unique value was given a number to correspond to
+8. Scaled the data using ```scaler.transform(X)```
+9. Split the data into train, test, and value
+10. Created a baseline model using DummyClassifier
+11. Created a logistic regression models with the train and value variables from the data splitting step
